@@ -1,0 +1,137 @@
+body {
+  background-color: #f8f9fa; /* Light background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  max-width: 1000px; /* Increased max-width */
+  margin: 0 auto;
+}
+
+.App header {
+  background-color: #ffc107; /* Yellow header color */
+  color: white;
+  padding: 15px 20px; /* Increased padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items to each side */
+}
+
+.App header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.App header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.App header button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Messages at the bottom */
+  align-items: flex-start; /* Align messages to the left */
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light background */
+  padding: 20px;
+}
+
+main {
+  flex: 1; /* Expand to fill remaining space */
+  overflow-y: auto;
+  min-width: 970px;
+}
+
+main::-webkit-scrollbar {
+  width: 8px;
+}
+
+main::-webkit-scrollbar-track {
+  background: #f8f9fa; /* Light background */
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #adb5bd; /* Lighter scrollbar thumb color */
+  border-radius: 5px;
+}
+
+form {
+  background-color: #fff; /* White background */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center form horizontally */
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+form input {
+  flex: 1;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+
+form button {
+  background-color: #ffc107; /* Yellow button color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end; /* Align messages to the left */
+  max-width: 80%; /* Limit message width */
+  margin-bottom: 10px; /* Added margin between messages */
+}
+
+.sent p {
+  background: #ffc107; /* Yellow message background */
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.received p {
+  background: #fff; /* White message background */
+  color: #333;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; /* Adjusted margin */
+}
+.message-container {
+  display: flex;
+  justify-content: flex-start; /* Align sent messages to the left */
+}
+
+.sent .message {
+  margin-left: auto; /* Push sent messages to the right edge of the container */
+}
+
+.received .message {
+  margin-right: auto; /* Push received messages to the left edge of the container */
+}
